@@ -2,9 +2,11 @@
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:haryana/Bottom_app_bar/settings/setting.dart';
 import 'package:haryana/authentication/login.dart';
 import 'package:haryana/homepage.dart';
 
+import 'About_page/about_hr.dart';
 import 'Bottom_app_bar/gallery.dart';
 
 void main() {
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GalleryPage(),
+      home: HomeScreen(),
       // home: AnimatedSplashScreen(
       //   splash: Center(
       //     child: Image.asset('assets/Image/app_icon.png'),

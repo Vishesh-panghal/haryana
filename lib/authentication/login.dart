@@ -11,11 +11,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  var usr = TextEditingController();
+  var pass = TextEditingController();
+  var name = "";
   @override
   Widget build(BuildContext context) {
-    var usr = TextEditingController();
-    var pass = TextEditingController();
-    var name = "";
     return SafeArea(
       bottom: false,
       child: Scaffold(

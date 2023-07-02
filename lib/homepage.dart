@@ -3,12 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:haryana/Bottom_app_bar/bookmark.dart';
 import 'package:haryana/Bottom_app_bar/gallery.dart';
-import 'package:haryana/Bottom_app_bar/setting.dart';
+import 'package:haryana/Bottom_app_bar/settings/setting.dart';
 import 'package:haryana/visit_page/visit_hr.dart';
 
 import 'About_page/about_hr.dart';
 import 'Museum_page/museum_hr.dart';
-import 'Quiz_page/quiz.dart';
+import 'Surajkund/surajkund.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,8 +20,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   var background_img =
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lIdMAxsZiBq9p-zabESjEoosE2F66jNiQg&usqp=CAU';
-  var about = '''
-Haryana is an Indian state located in the northern part of the country. It was carved out of the former state of East Punjab on 1 November 1966 on a linguistic basis.It is ranked 21st in terms of area, with less than 1.4% of India's land area.Haryana has 6 administrative divisions, 22 districts, 72 sub-divisions,93 revenue tehsils, 50 sub-tehsils, 140 community development blocks, 154 cities and towns, 7,356 villages, and 6,222 villages panchayats.The state is rich in history, monuments, heritage, flora and fauna and tourism, with a well-developed economy, national highways and state roads. It is bordered by Punjab and Himachal Pradesh to the north, by Rajasthan to the west and south, while river Yamuna forms its eastern border with Uttar Pradesh.Haryana surrounds the country's capital territory of Delhi on three sides (north, west and south), consequently, a large area of Haryana state is included in the economically important National Capital Region of India for the purposes of planning and development.''';
+  var about = """
+Haryana is an Indian state located in the northern part of the country. It was carved out of the former state of East Punjab on 1 November 1966 on a linguistic basis.It is ranked 21st in terms of area, with less than 1.4% of India's land area.Haryana has 6 administrative divisions, 22 districts, 72 sub-divisions,93 revenue tehsils, 50 sub-tehsils, 140 community development blocks, 154 cities and towns, 7,356 villages, and 6,222 villages panchayats.The state is rich in history, monuments, heritage, flora and fauna and tourism, with a well-developed economy, national highways and state roads. It is bordered by Punjab and Himachal Pradesh to the north, by Rajasthan to the west and south, while river Yamuna forms its eastern border with Uttar Pradesh.Haryana surrounds the country's capital territory of Delhi on three sides (north, west and south), consequently, a large area of Haryana state is included in the economically important National Capital Region of India for the purposes of planning and development.""";
   List<Map<String, dynamic>> options = [
     {
       'name': 'About',
@@ -29,7 +29,7 @@ Haryana is an Indian state located in the northern part of the country. It was c
       'pgLocation': AboutHrPage(),
     },
     {
-      'name': 'Place to visit',
+      'name': 'Explore Haryana',
       'imgAdd':
           'https://haryanatourism.gov.in/WriteReadData/mediafiles/image/tourism_hub_pic4.jpg',
       'pgLocation': VisitHrPage(),
@@ -41,10 +41,10 @@ Haryana is an Indian state located in the northern part of the country. It was c
       'pgLocation': MuseumHrPage(),
     },
     {
-      'name': 'Quiz',
+      'name': 'Surajkund International Crafts Mela',
       'imgAdd':
-          'https://1.bp.blogspot.com/-wf61lD2HF7E/XzJ19rsxnUI/AAAAAAAAIGw/FISGcLyXDt88GqqK2kVCroTuEsx7DGC_ACLcBGAsYHQ/s1600/Quiz-2.jpg',
-      'pgLocation': QuizPage(),
+          'https://haryanatourism.gov.in/WriteReadData/images/skma_header22.jpg',
+      'pgLocation': SurajkundPage(),
     },
   ];
   @override
@@ -264,7 +264,7 @@ Haryana is an Indian state located in the northern part of the country. It was c
                     ],
                   ),
                 ),
-                // ------------------Bottom APP------------------//
+                // ------------------Bottom APP BAR------------------//
               ],
             ),
           ),
