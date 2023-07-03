@@ -48,7 +48,6 @@ class SettingPage extends StatelessWidget {
             ),
             SizedBox(height: 30),
             Container(
-              // margin: EdgeInsets.symmetric(horizontal: 12),
               height: 300,
               width: double.infinity,
               decoration: BoxDecoration(

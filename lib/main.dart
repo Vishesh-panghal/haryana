@@ -6,6 +6,10 @@ import 'package:haryana/Bottom_app_bar/settings/setting.dart';
 import 'package:haryana/authentication/login.dart';
 import 'package:haryana/homepage.dart';
 
+import 'About_page/All_about_HR/Colonial_history.dart';
+import 'About_page/All_about_HR/chronolical_his.dart';
+import 'About_page/All_about_HR/formation_HR.dart';
+import 'About_page/All_about_HR/geography.dart';
 import 'About_page/about_hr.dart';
 import 'Bottom_app_bar/gallery.dart';
 
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: GeographyHRPage(),
       // home: AnimatedSplashScreen(
       //   splash: Center(
       //     child: Image.asset('assets/Image/app_icon.png'),

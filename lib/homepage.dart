@@ -58,7 +58,7 @@ Haryana is an Indian state located in the northern part of the country. It was c
               image: DecorationImage(
             image: NetworkImage(background_img),
             fit: BoxFit.fitWidth,
-            opacity: .3,
+            opacity: 1,
           )),
           child: SingleChildScrollView(
             child: Column(
@@ -158,7 +158,7 @@ Haryana is an Indian state located in the northern part of the country. It was c
                                 image:
                                     NetworkImage('${options[index]['imgAdd']}'),
                                 fit: BoxFit.fill,
-                                opacity: .8,
+                                opacity: 1,
                               ),
                             ),
                             child: Stack(
