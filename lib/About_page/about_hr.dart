@@ -8,6 +8,7 @@ import 'package:haryana/About_page/All_about_HR/formation_HR.dart';
 import 'package:haryana/About_page/All_about_HR/geography.dart';
 
 import 'All_about_HR/chronolical_his.dart';
+import 'All_about_HR/Eco.dart';
 
 class AboutHrPage extends StatelessWidget {
 
@@ -31,6 +32,11 @@ class AboutHrPage extends StatelessWidget {
       'about': 'Geography',
       'icon': Icons.chevron_right_rounded,
       'address': GeographyHRPage(),
+    },
+    {
+      'about': 'Economy & Health',
+      'icon': Icons.chevron_right_rounded,
+      'address': EconomyHRPage(),
     },
     {
       'about': 'Cultures',
@@ -101,7 +107,7 @@ class AboutHrPage extends StatelessWidget {
             ),
             Container(
               alignment: Alignment.center,
-              height: 400,
+              height: 500,
               child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 itemCount: options.length,
