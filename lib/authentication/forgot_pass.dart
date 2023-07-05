@@ -5,7 +5,6 @@ import 'package:haryana/authentication/login.dart';
 import 'package:haryana/authentication/signup.dart';
 
 class ForgotPassword extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -33,6 +32,12 @@ class ForgotPassword extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 18, right: 8),
                 child: TextField(
                   decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                      color: Colors.deepPurple,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(15)),
                     label: Text('Email'),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
@@ -51,17 +56,33 @@ class ForgotPassword extends StatelessWidget {
                 child: Text('Forgot Password'),
               ),
               SizedBox(height: 20),
-              Text('OR',style: TextStyle(fontSize: 18),),
+              Text(
+                'OR',
+                style: TextStyle(fontSize: 18),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                TextButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage(),));
-                }, child: Text('Login')),
-              TextButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage(),));
-              }, child: Text('Signup')),
-              ],)
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => LoginPage(),
+                            ));
+                      },
+                      child: Text('Login')),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SignupPage(),
+                            ));
+                      },
+                      child: Text('Signup')),
+                ],
+              )
             ],
           ),
         ),
