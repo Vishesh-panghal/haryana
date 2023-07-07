@@ -33,14 +33,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // home: ForgotPassword(),
-      home: AnimatedSplashScreen(
-        splash: Center(
-          child: Image.asset('assets/Image/app_icon.png'),
-        ),
-        nextScreen: LoginPage(),
-        duration: 2000,
-      ),
+      home: VisitHrPage(),
+      // home: AnimatedSplashScreen(
+      //   splash: Center(
+      //     child: Image.asset('assets/Image/app_icon.png'),
+      //   ),
+      //   nextScreen: LoginPage(),
+      //   duration: 2000,
+      // ),
     );
   }
 }
